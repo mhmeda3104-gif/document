@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document | Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #58a6ff, #bc8cff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .card {
+            background-color: #161b22;
+            border: 1px solid #30363d;
+            transition: 0.3s;
+        }
+        .card:hover {
+            border-color: #8b949e;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <nav class="border-b border-[#30363d] p-4 bg-[#0d1117] sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-xl font-bold gradient-text">وثيقتي </div>
+            <div class="space-x-4 space-x-reverse">
+                <a href="#features" class="hover:text-blue-400">المميزات</a>
+                <a href="https://github.com/YOUR_USERNAME/REPO" class="bg-[#238636] text-white px-4 py-2 rounded-md hover:bg-green-700 transition">GitHub</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="py-20 px-6 text-center">
+        <h1 class="text-5xl md:text-6xl font-extrabold mb-6">
+            اجعل مشروعك <span class="gradient-text">أكثر ذكاءً</span>
+        </h1>
+        <p class="text-gray-400 text-lg max-w-2xl mx-auto mb-10">
+            وصف قصير، مباشر، وعملي لما يفعله المشروع. تجنب الكلام الإنشائي الزائد، ركز على القيمة التي يقدمها مشروعك للمستخدم.
+        </p>
+        <div class="flex justify-center gap-4">
+            <button class="bg-[#21262d] border border-[#30363d] px-8 py-3 rounded-lg hover:bg-[#30363d]">ابدأ الآن</button>
+            <button class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-500">توثيق المشروع (Docs)</button>
+        </div>
+    </section>
+
+    <section id="features" class="py-20 bg-[#0d1117]">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">لماذا تختار هذا المشروع؟</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="card p-8 rounded-xl text-right">
+                    <div class="text-blue-500 mb-4 text-2xl">⚡</div>
+                    <h3 class="text-xl font-semibold mb-2">أداء عالٍ</h3>
+                    <p class="text-gray-400">تم بناء المشروع بأحدث التقنيات لضمان السرعة والكفاءة العالية.</p>
+                </div>
+                <div class="card p-8 rounded-xl text-right">
+                    <div class="text-blue-500 mb-4 text-2xl">🛠️</div>
+                    <h3 class="text-xl font-semibold mb-2">سهولة التخصيص</h3>
+                    <p class="text-gray-400">كود نظيف ومرتب يسمح لك بالتعديل عليه بما يناسب احتياجاتك تماماً.</p>
+                </div>
+                <div class="card p-8 rounded-xl text-right">
+                    <div class="text-blue-500 mb-4 text-2xl">🔒</div>
+                    <h3 class="text-xl font-semibold mb-2">أمان وموثوقية</h3>
+                    <p class="text-gray-400">نلتزم بأفضل معايير الأمان لحماية بياناتك واستقرار النظام.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="border-t border-[#30363d] py-10 text-center text-gray-500">
+        <p>بني بكل فخر بواسطة <a href="#" class="text-blue-400 underline">اسمك</a> - 2026</p>
+    </footer>
+
+</body>
+</html>
